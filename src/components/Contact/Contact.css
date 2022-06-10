@@ -1,0 +1,14 @@
+#contactForm{
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width:500px) {
+  #contactForm{
+    width: 100%;
+  }
+}
+@media only screen and (max-width:767px) {
+  #contactText{
+    display:none;
+  }
+}
