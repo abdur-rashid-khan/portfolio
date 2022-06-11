@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Skills = () => {
   return (
@@ -6,7 +7,10 @@ const Skills = () => {
       <div className="container mx-auto px-4">
         <div className="">
           <div className="skills_header">
+            <div className="header flex items-center justify-between py-4">
             <h1 className='text-3xl font-serif text-slate-800 font-semibold'> Skills </h1>
+            <Link to={'/total-projects'} className='text-lg underline text-blue-700'>see all </Link>
+          </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4 pt-4">
 
