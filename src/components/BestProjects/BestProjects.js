@@ -12,10 +12,20 @@ const BestProjects = () => {
             <h1 className='text-3xl font-serif font-semibold text-slate-800'>Best Projects</h1>
             <Link to={'/total-projects'} className='text-lg underline text-blue-700'>see all </Link>
           </div>
-          <div className="total_items grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="total_items grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="single_project">
+              <div class="card card-compact bg-slate-200 shadow-xl rounded-md ">
+                <a href='https://max-shop-99fc1.web.app/' target="_blank"><figure><img className='w-full h-auto' src="https://i.ibb.co/dDWf72s/manu.png" alt="Shoes" /></figure></a>
+              </div>
+            </div>
             <div className="single_project">
               <div class="card card-compact bg-slate-200 shadow-xl rounded-md">
-                <a href='https://max-shop-99fc1.web.app/' target="_blank"><figure><img className='w-full h-auto' src="https://i.ibb.co/dDWf72s/manu.png" alt="Shoes" /></figure></a>
+                <a href='https://ar-photography-f8773.firebaseapp.com/' target="_blank"><figure><img className='w-full h-auto' src="https://i.ibb.co/Mg2ZWF9/screencapture-ar-photography-f8773-firebaseapp-2022-06-12-00-27-32.png" alt="Shoes" /></figure></a>
+              </div>
+            </div>
+            <div className="single_project">
+              <div class="card card-compact bg-slate-200 shadow-xl rounded-md">
+                <a href='https://doctors-portal-56d81.web.app/' target="_blank"><figure><img className='w-full h-auto' src="https://i.ibb.co/tXTkdCf/screencapture-doctors-portal-56d81-web-app-2022-06-12-00-43-31.png" alt="Shoes" /></figure></a>
               </div>
             </div>
           </div>
