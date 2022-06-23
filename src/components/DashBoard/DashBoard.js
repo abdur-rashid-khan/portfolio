@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import menu from '../../img/menu.png'
 // for hero icon 
 // import { BeakerIcon, ChevronRightIcon } from '@heroicons/react/solid'
@@ -12,7 +11,7 @@ const DashBoard = () => {
 		<div className="container mx-auto px-2 lg:px-0">
 			<div className="drawer drawer-mobile pt-16">
 				<input id="open-dashboard-menu" type="checkbox" className="drawer-toggle" />
-				<div className="drawer-content  flex flex-col">
+				<div className="drawer-content  flex flex-col bg-slate-200">
 					{/* <!-- Page content here --> */}
 					<div className="text-left mt-4 ">
 						<label htmlFor="open-dashboard-menu" className="w-10 rounded h-10 inline-block cursor-pointer bg-blue-500 hover:bg-blue-800 text-white lg:hidden"><span>
