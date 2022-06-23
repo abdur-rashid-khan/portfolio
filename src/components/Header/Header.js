@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
+
 const Header = () => {
   return (
-    <nav className='navbar bg-slate-600'>
+    <nav className='navbar bg-slate-600 fixed z-10'>
       <div className="container mx-auto">
         <div className="navbar-start md:w-0">
           <div className="dropdown">

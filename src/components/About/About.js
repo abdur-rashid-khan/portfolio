@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import aboutPhoto from '../../img/about.jpg'
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
       <div className='container mx-auto py-6 px-4'>
         <div className="flex gap-6 items-center">
           <div className="sm:block hidden">
-            <img className='max-w-lg rounded shadow-xl' src="https://i.ibb.co/9rj1Sk7/MG-5424.jpg" alt="photos" />
+            <img className='lg:max-w-md sm:max-w-sm rounded shadow-xl' src={aboutPhoto} alt="photos" />
           </div>
           <div className="">
             <h1 className='text-3xl font-serif font-semibold text-slate-800'>Summary of skills </h1>

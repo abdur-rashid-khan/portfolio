@@ -1,3 +1,4 @@
+import ProgressBar from '@ramonak/react-progress-bar';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -8,39 +9,46 @@ const Skills = () => {
         <div className="">
           <div className="skills_header">
             <div className="header flex items-center justify-between py-4">
-            <h1 className='text-3xl font-serif text-slate-800 font-semibold'> Skills </h1>
-            <Link to={'/total-projects'} className='text-lg underline text-blue-700'>see all </Link>
+              <h1 className='text-3xl font-serif text-slate-800 font-semibold'> Skills </h1>
+              <Link to={'/total-projects'} className='text-lg underline text-blue-700'>see all </Link>
+            </div>
           </div>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4 pt-4">
-
-            <div class="card card-compact bg-slate-200 shadow-xl rounded-md">
-              <figure><img className='w-full h-72' src="https://i.ibb.co/DWjmMFM/firebase.jpg" alt="Shoes" /></figure>
-              <div class="card-body">
-                <h2 class="card-title">Firebase</h2>
-                <p className='pb-4 text-base text-slate-700'>I use mongodb as a database because mongodb has many great futures that all user information can be protected and presented very easily. There are many more benefits</p>
+          <div className="grid items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10 pt-4">
+            <div className="">
+              <div className="flex items-center justify-center gap-4">
+                <h1 className='uppercase  '>html</h1>
+                <ProgressBar 
+                className='w-full'
+                  completed={80}
+                  transitionTimingFunction={'ease-in-out'}
+                  animateOnRender={true}
+                  bgColor='#fb5200'
+                  height='10px'
+                />
               </div>
             </div>
-            <div class="card card-compact bg-slate-200 shadow-xl rounded-md">
-              <figure><img className='w-full h-72' src="https://i.ibb.co/2YcLB7j/js.png" alt="Shoes" /></figure>
-              <div class="card-body">
-                <h2 class="card-title">MongoDb</h2>
-                <p className='pb-4 text-base text-slate-700'>I use mongodb as a database because mongodb has many great futures that all user information can be protected and presented very easily. There are many more benefits</p>
+            <div className="">
+            <div className="flex items-center justify-center gap-4">
+                <h1 className='uppercase  '>css</h1>
+                <ProgressBar 
+                className='w-full'
+                  completed={80}
+                  transitionTimingFunction={'ease-in-out'}
+                  animateOnRender={true}
+                  bgColor='#fb5200'
+                />
               </div>
             </div>
-            <div class="card card-compact bg-slate-200 shadow-xl rounded-md">
-              <figure><img className='w-full h-72' src="https://i.ibb.co/KNSNBM6/react.png" alt="Shoes" /></figure>
-              <div class="card-body">
-                <h2 class="card-title">MongoDb</h2>
-                <p className='pb-4 text-base text-slate-700'>I use mongodb as a database because mongodb has many great futures that all user information can be protected and presented very easily. There are many more benefits</p>
-              </div>
-            </div>
-            <div class="card card-compact bg-slate-200 shadow-xl rounded-md">
-              <figure><img className='w-full h-72' src="https://i.ibb.co/pWBrdF7/bootstrap.png" alt="Shoes" /></figure>
-              <div class="card-body">
-                <h2 class="card-title">MongoDb</h2>
-                <p className='pb-4 text-base text-slate-700'>I use mongodb as a database because mongodb has many great futures that all user information can be protected and presented very easily. There are many more benefits</p>
-                
+            <div className="">
+            <div className="flex items-center justify-center gap-4">
+                <h1 className='uppercase  '>javascript</h1>
+                <ProgressBar 
+                className='w-full'
+                  completed={80}
+                  transitionTimingFunction={'ease-in-out'}
+                  animateOnRender={true}
+                  bgColor='#fb5200'
+                />
               </div>
             </div>
           </div>
