@@ -2,8 +2,10 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import './BestProjects.css'
 
 const BestProjects = () => {
+  
   return (
     <div>
       <section className='py-6'>
@@ -13,19 +15,14 @@ const BestProjects = () => {
             <Link to={'/total-projects'} className='text-lg underline text-blue-700'>see all </Link>
           </div>
           <div className="total_items grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="single_project">
-              <div class="card card-compact bg-slate-200 shadow-xl rounded-md ">
-                <a href='https://max-shop-99fc1.web.app/' target="_blank"><figure><img className='w-full h-auto' src="https://i.ibb.co/dDWf72s/manu.png" alt="Shoes" /></figure></a>
+            <div id="single_project">
+              <div id='img_div' className="card card-compact bg-slate-200 shadow-xl rounded-md ">
+                <img className='w-full h-auto' src="https://i.ibb.co/dDWf72s/manu.png" alt="Shoes" />
               </div>
-            </div>
-            <div className="single_project">
-              <div class="card card-compact bg-slate-200 shadow-xl rounded-md">
-                <a href='https://ar-photography-f8773.firebaseapp.com/' target="_blank"><figure><img className='w-full h-auto' src="https://i.ibb.co/Mg2ZWF9/screencapture-ar-photography-f8773-firebaseapp-2022-06-12-00-27-32.png" alt="Shoes" /></figure></a>
-              </div>
-            </div>
-            <div className="single_project">
-              <div class="card card-compact bg-slate-200 shadow-xl rounded-md">
-                <a href='https://doctors-portal-56d81.web.app/' target="_blank"><figure><img className='w-full h-auto' src="https://i.ibb.co/tXTkdCf/screencapture-doctors-portal-56d81-web-app-2022-06-12-00-43-31.png" alt="Shoes" /></figure></a>
+              <div id="projects_des" className='rounded-lg'>
+                <h1 className='capitalize text-xl text-slate-800 font-serif font-semibold py-2 p-2'>Max Tools and part</h1>
+                <p className='text-slate-600 capitalize p-2 text-sm'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste expedita et laboriosam unde, odit nobis est corporis officiis tempora minima.</p>
+                <button className="bg-blue-600 mt-2 hover:bg-blue-800 p-2 px-6 text-white  uppercase font-serif rounded-t text-sm w-full ">Live Demo</button>
               </div>
             </div>
           </div>

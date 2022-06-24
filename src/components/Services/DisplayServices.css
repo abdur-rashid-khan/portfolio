@@ -1,0 +1,15 @@
+#cardAnimation{
+  transition: all 1s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#cardAnimation:hover{
+  cursor: pointer;
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+}

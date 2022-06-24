@@ -21,7 +21,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-        <div class="navbar-end text-right md:text-start">
+        <div className="navbar-end text-right md:text-start">
           <a href="/" className="btn btn-ghost normal-case text-xl text-right text-white">Rashid Khan</a>
         </div>
         <div className="navbar-end hidden md:flex">

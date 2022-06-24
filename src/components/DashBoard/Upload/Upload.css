@@ -3,4 +3,17 @@
   height: auto;
   background: #ffffff;
   margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-13%,-50%);
+  -webkit-transform: translate(-13%,-50%);
+  -moz-transform: translate(-13%,-50%);
+  -ms-transform: translate(-13%,-50%);
+  -o-transform: translate(-13%,-50%);
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
 }
