@@ -15,7 +15,7 @@ const Skills = () => {
   // const [valueEnd, setValueEnd] = React.useState(66);
   
   return (
-    <section className="container mx-auto px-2 py-8">
+    <section id="skills" className="container mx-auto px-2 py-8">
       <div className="">
       <h1 className="text-3xl font-serif text-slate-800 font-semibold">Skills </h1>
       </div>

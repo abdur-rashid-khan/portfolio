@@ -10,6 +10,8 @@ import ManageServices from './components/DashBoard/ManageServices/ManageServices
 import ManageProjects from './components/DashBoard/ManageProjects/ManageProjects';
 import SkillsPost from './components/DashBoard/SkillsPost/SkillsPost';
 import ManageSkills from './components/DashBoard/ManageSkills/ManageSkills';
+import AddReview from './components/DashBoard/Review/AddReview';
+import ManageReview from './components/DashBoard/Review/ManageReview';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/admin-rk" element={<DashBoard />} >
           <Route index path='/admin-rk' element={
             <ManageServices></ManageServices>
@@ -35,6 +38,12 @@ function App() {
           }></Route>
           <Route path='/admin-rk/manage-skills' element={
             <ManageSkills></ManageSkills>
+          }></Route>
+          <Route path='/admin-rk/add-review' element={
+            <AddReview></AddReview>
+          }></Route>
+          <Route path='/admin-rk/manage-review' element={
+            <ManageReview></ManageReview>
           }></Route>
         </Route>
       </Routes>

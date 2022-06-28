@@ -14,8 +14,7 @@ const BestProjects = () => {
       .then(data => setProjects(data))
   }, [])
   return (
-    <div>
-      <section className='py-6'>
+      <section className='py-6' id='project'>
         <div className="container mx-auto px-2">
           <div className="header flex items-center justify-between py-4">
             <h1 className='text-3xl font-serif font-semibold text-slate-800'>Best Projects</h1>
@@ -28,7 +27,6 @@ const BestProjects = () => {
           </div>
         </div>
       </section>
-    </div>
   );
 };
 

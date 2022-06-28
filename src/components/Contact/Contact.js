@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <section className='container mx-auto py-8 px-4'>
+    <section className='container mx-auto py-8 px-4' id='contact'>
       <div className="mt-10 sm:mt-0 grid grid-cols-1 md:grid-cols-2 items-center gap-4">
         <div className="visible md:hidden" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="2000">
           <div className="text-start">
@@ -15,7 +15,7 @@ const Contact = () => {
         </div>
         <div className="m-auto bg-slate-300 rounded shadow" id='contactForm' data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="2000">
           <div className="mt-5 md:mt-0 md:col-span-2">
-            <form method="POST">
+            <form action='https://formspree.io/f/mvolnlkq' method="POST">
               <div className="shadow overflow-hidden sm:rounded-md">
                 <div className="px-4 py-5  sm:p-6">
                   <div className="">

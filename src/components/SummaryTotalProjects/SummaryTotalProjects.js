@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 
 const SummaryTotalProjects = () => {
   return (
-    <div className='container mx-auto px-2 py-8'>
+    <section className='container mx-auto px-2 py-8'>
       <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 items-center justify-center justify-items-center">
       <div className="text-center bg-white w-full h-auto border-r py-20 rounded shadow-2xl border" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" >
       <CountUp
@@ -54,7 +54,7 @@ const SummaryTotalProjects = () => {
       <h1 className='capitalize text-xl font-serif '>team member</h1>
       </div>
       </div>
-    </div>
+    </section>
   );
 };
 
