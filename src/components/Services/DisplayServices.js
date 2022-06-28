@@ -4,7 +4,7 @@ import './DisplayServices.css'
 const DisplayServices = ({ services }) => {
   const sliceDes = services.servicesDescription.slice(0,100)
   return (
-    <div className='bg-white p-4 shadow-2xl rounded' id='cardAnimation'>
+    <div className='bg-white p-4 shadow-2xl rounded' id='cardAnimation' data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
       <div className="m-auto" style={{width:'120px',height:'auto'}}>
         <img className='max-w-full' src={services.img} alt="services photos" />
       </div>

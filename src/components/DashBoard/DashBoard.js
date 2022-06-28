@@ -36,8 +36,9 @@ const DashBoard = () => {
 								<li className='py-1 text-lg hover:text-black rounded'><Link className='py-2 capitalize' to={'/admin-rk/upload-service'}>Add services</Link></li>
 								<li className='py-1 text-lg hover:text-black rounded'><Link className='py-2 ' to={'/admin-rk/manage-projects'}>Manage Projects</Link></li>
 								<li className='py-1 text-lg hover:text-black rounded'><Link className='py-2 capitalize' to={'/admin-rk/project-add'}>Add Project</Link></li>
+								<li className='py-1 text-lg hover:text-black rounded'><Link className='py-2 ' to={'/admin-rk/add-skill'}>Add Skill</Link></li>
+								<li className='py-1 text-lg hover:text-black rounded'><Link className='py-2 ' to={'/admin-rk/manage-skills'}>Manage Skills</Link></li>
 					</ul>
-
 				</div>
 			</div>
 		</div>

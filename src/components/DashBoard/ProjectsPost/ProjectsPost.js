@@ -1,10 +1,50 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import Swal from 'sweetalert2';
 
 const ProjectsPost = () => {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
   const onSubmit = data => {
-
+    const imgbbAPIKey = 'ef8e2adcf82ba9b088feff829df4d6bf';
+    const image = data.image[0];
+    const formData = new FormData();
+    formData.append('image', image);
+    const url = `https://api.imgbb.com/1/upload?key=${imgbbAPIKey}`;
+    fetch(url, {
+      method: 'POST',
+      body: formData
+    })
+      .then(res => res.json())
+      .then(result => {
+        if (result.success) {
+          const img = result.data.url;
+          const projectsData = {
+            projectsName: data.projectsName,
+            projectsLiveLink: data.projectsLiveLink,
+            projectsDescription: data.projectsDescription,
+            image: img
+          }
+          // console.log(projectsData);
+          fetch('http://localhost:5000/project-add', {
+            method: 'POST',
+            headers:{
+              'content-type': 'application/json',
+            },
+            body: JSON.stringify(projectsData),
+          })
+            .then(res => res.json())
+            .then(inserted => {
+              if (inserted.acknowledged) {
+                Swal.fire(
+                  'product add success',
+                  '',
+                  'success'
+                )
+              }
+              reset()
+            })
+        }
+      })
   }
   return (
     <section>

@@ -7,6 +7,9 @@ import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Services from '../Services/Services';
 import Skills from '../Skills/Skills';
+import Slider from '../Slider/Slider';
+import SummaryTotalProjects from '../SummaryTotalProjects/SummaryTotalProjects';
+
 
 const Home = () => {
   return (
@@ -16,6 +19,8 @@ const Home = () => {
       <Skills></Skills>
       <Services></Services>
       <BestProjects></BestProjects>
+      <SummaryTotalProjects></SummaryTotalProjects>
+      <Slider></Slider>
       <Contact></Contact>
       <Footer></Footer>
     </>
