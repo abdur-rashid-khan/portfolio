@@ -1,51 +1,34 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-// import "./styles.css";
+import "swiper/css/zoom";
+import "./Slider.css";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
+import SingleReview from "./SingleReview";
 
 const Slider = () => {
+  const [review, setReview] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:5000/review', {
+      method: 'GET',
+    })
+      .then(res => res.json())
+      .then(data => setReview(data))
+  }, [])
   return (
     <section className="container mx-auto px-2 py-16" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="2000">
-      <div className="text-3xl font-serif text-slate-800 font-semibold pb-8" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" >Review</div>
-      <Swiper
-        slidesPerView={1}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        spaceBetween={30}
-        loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={false}
-        modules={[Pagination, Navigation, Autoplay]}
-        className="mySwiper"
-      >
-          <SwiperSlide className="px-6 py-4 bg-white shadow-2xl rounded cursor-pointer w-10">
-            <div className="py-4">
-              <h1 className="text-slate-800">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi iste non, numquam natus odio aliquam sed sapiente tempore et suscipit.</h1>
-            </div>
-            <div className="flex items-center">
-              <div className="avatar online">
-                <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                  <img src="https://api.lorem.space/image/face?hash=3174" />
-                </div>
-              </div>
-              <div className="pl-4">
-                <h1 className="text-slate-800 font-semibold font-serif capitalize">Summit</h1>
-                <h2 className="text-slate-800 font-serif  capitalize">Dhaka , Bangladesh</h2>
-              </div>
-            </div>
-          </SwiperSlide>
-      </Swiper>
+      <div className="text-3xl font-serif text-slate-800 font-semibold pb-8" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" >Testimonial</div>
+        <div className="flex w-full">
+        {
+          review.map((review, index) => <SingleReview review={review} key={index}></SingleReview>)
+        }
+        </div>
     </section>
   );
 };

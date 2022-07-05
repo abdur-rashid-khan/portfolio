@@ -1,7 +1,7 @@
 
 import './App.css';
 import Home from './components/Home/Home';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import Header from './components/Header/Header';
 import DashBoard from './components/DashBoard/DashBoard';
 import UploadServices from './components/DashBoard/Upload/UploadServices';
@@ -12,6 +12,9 @@ import SkillsPost from './components/DashBoard/SkillsPost/SkillsPost';
 import ManageSkills from './components/DashBoard/ManageSkills/ManageSkills';
 import AddReview from './components/DashBoard/Review/AddReview';
 import ManageReview from './components/DashBoard/Review/ManageReview';
+import ManageBlog from './components/DashBoard/ManageBlog/ManageBlog';
+import AddBlog from './components/DashBoard/ManageBlog/AddBlog';
+import SingleBlog from './components/Blog/SingleBlog';
 
 function App() {
   return (
@@ -20,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        
         <Route path="/admin-rk" element={<DashBoard />} >
           <Route index path='/admin-rk' element={
             <ManageServices></ManageServices>
@@ -45,7 +49,15 @@ function App() {
           <Route path='/admin-rk/manage-review' element={
             <ManageReview></ManageReview>
           }></Route>
+          <Route path='/admin-rk/add-blog' element={
+            <AddBlog></AddBlog>
+          }></Route>
+          <Route path='/admin-rk/manage-blog' element={
+            <ManageBlog></ManageBlog>
+          }></Route>
         </Route>
+        {/*  */}
+        <Route path="/blog/:id" element={<SingleBlog />} />
       </Routes>
     </>
   );

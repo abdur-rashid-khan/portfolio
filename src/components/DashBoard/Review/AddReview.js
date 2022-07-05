@@ -5,7 +5,46 @@ import Swal from 'sweetalert2';
 const AddReview = () => {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
   const onSubmit = data => {
-    console.log(data);
+    const imgbbAPIKey = 'ef8e2adcf82ba9b088feff829df4d6bf';
+    const image = data.image[0];
+    const formData = new FormData();
+    formData.append('image',image)
+     const url = `https://api.imgbb.com/1/upload?key=${imgbbAPIKey}`;
+     fetch(url,{
+      method:'POST',
+      body:formData
+     })
+     .then(res => res.json())
+     .then(result=>{
+      if(result.success){
+        const img = result.data.url;
+        const review = {
+          userName:data.name,
+          location:data.location,
+          review:data.review,
+          image:img
+        }
+        // send services data to database
+        fetch('http://localhost:5000/add-review',{
+          method:'POST',
+          headers:{
+            'content-type':'application/json',
+          },
+          body:JSON.stringify(review)
+        })
+        .then(res=>res.json())
+        .then(inserted =>{
+          if(inserted.acknowledged){
+            Swal.fire(
+              'review add success',
+              '',
+              'success'
+            )
+            reset();
+          }
+        })
+      }
+     })
   }
   return (
     <div>
@@ -35,13 +74,13 @@ const AddReview = () => {
               </label>
             </div>
             <div className='py-4'>
-              <label htmlFor="location" className="text-slate-600">Services Description</label>
-              <input id="location" name="location" type="text" className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Type Here location "
+              <label htmlFor="location" className="text-slate-600"> Address</label>
+              <input id="location" name="location" type="text" className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Type Here Address "
 
                 {...register("location", {
                   required: {
                     value: true,
-                    message: "please type your location",
+                    message: "please type your Address",
                   },
 
                 }

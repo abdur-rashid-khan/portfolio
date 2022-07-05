@@ -2,6 +2,7 @@ import React from 'react';
 import About from '../About/About';
 import Banner from '../Banner/Banner';
 import BestProjects from '../BestProjects/BestProjects';
+import Blog from '../Blog/Blog';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
@@ -20,7 +21,8 @@ const Home = () => {
       <Services></Services>
       <BestProjects></BestProjects>
       <SummaryTotalProjects></SummaryTotalProjects>
-      <Slider></Slider>
+      {/* <Slider></Slider> */}
+      <Blog></Blog>
       <Contact></Contact>
       <Footer></Footer>
     </>
