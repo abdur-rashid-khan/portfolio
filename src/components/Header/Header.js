@@ -13,9 +13,9 @@ const Header = () => {
             </label>
             <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
               <li><Link className='text-slate-600' to='/'>Home</Link></li>
-              <li><Link className='text-slate-600' to='#'>Skills</Link></li>
               <li><Link className='text-slate-600' to='/project'>Project</Link></li>
               <li><Link className='text-slate-600' to='/contact'>Contact</Link></li>
+              <li><Link className='text-slate-600' to='/blog'>Blog</Link></li>
               <li><Link className='text-slate-600' to='/about'>About</Link></li>
 
             </ul>
@@ -27,9 +27,9 @@ const Header = () => {
         <div className="navbar-end hidden md:flex">
           <ul className="menu menu-horizontal p-0">
             <li><Link className='text-white' to='/home'>Home</Link></li>
-            <li><Link className='text-white' to='#'>Skills</Link></li>
             <li><Link className='text-white' to='/project'>Project</Link></li>
             <li><Link className='text-white' to='/contact'>Contact</Link></li>
+            <li><Link className='text-white' to='/blog'>Blog</Link></li>
             <li><Link className='text-white' to='/about'>About</Link></li>
           </ul>
         </div>

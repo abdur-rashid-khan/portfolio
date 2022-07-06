@@ -15,6 +15,11 @@ import ManageReview from './components/DashBoard/Review/ManageReview';
 import ManageBlog from './components/DashBoard/ManageBlog/ManageBlog';
 import AddBlog from './components/DashBoard/ManageBlog/AddBlog';
 import SingleBlog from './components/Blog/SingleBlog';
+import BestProjects from './components/BestProjects/BestProjects';
+import Contact from './components/Contact/Contact';
+import Blog from './components/Blog/Blog';
+import Footer from './components/Footer/Footer';
+import AboutMe from './components/AboutMe/AboutMe';
 
 function App() {
   return (
@@ -58,7 +63,12 @@ function App() {
         </Route>
         {/*  */}
         <Route path="/blog/:id" element={<SingleBlog />} />
+        <Route path="/project" element={<BestProjects />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/about" element={<AboutMe />} />
       </Routes>
+      <Footer></Footer>
     </>
   );
 }

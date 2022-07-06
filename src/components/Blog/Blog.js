@@ -13,14 +13,14 @@ const Blog = () => {
       .then(data => setBlog(data))
   }, [])
   return (
-    <section>
+    <section className='pt-20'>
       <div className="container mx-auto px-4">
-        <div className="">
+        <div className="" data-aos="fade-up" data-aos-easing="linear"data-aos-duration="1000">
           <h1 className="text-3xl font-serif font-semibold text-slate-800"> Blog</h1>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 py-10 gap-8">
           {
-            blog.map( (b,index) =><div className="bg-white rounded shadow-2xl" id='cardAnimation' key={index}>
+            blog.map( (b,index) =><div className="bg-white rounded shadow-2xl" id='cardAnimation' key={index} data-aos="fade-up" data-aos-easing="linear"data-aos-duration="1000">
             <div className="" style={{width:'100%',height:'260px'}}>
               <img className='rounded-t w-full h-full' src={b.img} alt="react photos" />
             </div>

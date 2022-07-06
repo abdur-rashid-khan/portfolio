@@ -21,7 +21,7 @@ const SingleBlog = () => {
         <div className="">
           {
             blog.map(b =>
-              <div className="" key={b._id}>
+              <div className="" key={b._id} >
                 <div className="m-auto h-auto sm:h-96 w-full sm:w-[45rem]">
                   <img className='mx-auto rounded shadow-2xl w-full h-full' src={b.img} alt="blog_img" />
                 </div>

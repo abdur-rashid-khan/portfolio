@@ -1,7 +1,9 @@
-#banner_section{
+#banner_section {
   /* background-image: linear-gradient(to bottom right,#1900a5,#ff4cae); */
-  background-image: linear-gradient(to bottom right,#0004f1,#ff028d);
+  background-image: linear-gradient(to bottom right, #0004f1, #ff028d);
+  overflow: hidden;
 }
+
 #banner {
   position: relative;
   height: 70vh;
@@ -20,36 +22,172 @@
   -o-transform: translate(-50%, -50%);
 }
 
-#svg{
-background-image: url('../../img/svg.png');
-width: 50px;
-height: 50px;
-background-size: cover;
+#svg {
+  background-image: url('../../img/svg.png');
+  width: 50px;
+  height: 50px;
+  background-size: cover;
 }
-#readies{
+
+#readies {
   position: relative;
-  width:450px;
+  width: 450px;
   height: 450px;
   background-image: linear-gradient(to bottom right, rgba(98, 0, 255, 0.466), rgb(255, 0, 179));
   /*border-radius: 30% 70% 70% 30% / 30% 47% 53% 70% ;
-  */border-radius: 75% 25% 17% 83% / 60% 58% 42% 40%;
+  */
+  border-radius: 75% 25% 17% 83% / 60% 58% 42% 40%;
   -webkit-border-radius: 75% 25% 17% 83% / 60% 58% 42% 40%;
   -moz-border-radius: 75% 25% 17% 83% / 60% 58% 42% 40%;
   -ms-border-radius: 75% 25% 17% 83% / 60% 58% 42% 40%;
   -o-border-radius: 75% 25% 17% 83% / 60% 58% 42% 40%;
   overflow: hidden;
 }
-#readies img{
+
+#readies img {
   position: absolute;
   bottom: 0%;
   left: -10%;
-  max-width:900px;
+  max-width: 900px;
   height: 400px;
   overflow: hidden;
+}
+
+@media only screen and (max-width:320px) {
+  #banner {
+    position: relative;
+    height: 100vh;
+  }
+
+  #bannerContent {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+  #readies img {
+    position: absolute;
+    bottom: 0%;
+    left: -10%;
+    max-width: 500px;
+    height: 250px;
+    overflow: hidden;
+  }
+  #readies {
+    position: relative;
+    width: 250px;
+    height: 250px;
+  }
+}
+@media only screen and (min-width:321px) {
+  #banner {
+    position: relative;
+    height: 100vh;
+  }
+
+  #bannerContent {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+  #readies img {
+    position: absolute;
+    bottom: 0%;
+    left: -10%;
+    max-width: 550px;
+    height: 300px;
+    overflow: hidden;
+  }
+  #readies {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (min-width:382px) {
+  #banner {
+    position: relative;
+    height: 100vh;
+  }
+
+  #bannerContent {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    -webkit-transform: translate(-50%, -65%);
+    -moz-transform: translate(-50%, -65%);
+    -ms-transform: translate(-50%, -65%);
+    -o-transform: translate(-50%, -65%);
+}
+  #readies img {
+    position: absolute;
+    bottom: 0%;
+    left: -10%;
+    max-width: 600px;
+    height: 350px;
+    overflow: hidden;
+  }
+  #readies {
+    position: relative;
+    width: 350px;
+    height: 350px;
+  }
+}
+@media only screen and (min-width:482px) {
+  #banner {
+    position: relative;
+    height: 100vh;
+  }
+
+  #bannerContent {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+  #readies img {
+    position: absolute;
+    bottom: 0%;
+    left: -10%;
+    max-width: 680px;
+    height: 420px;
+    overflow: hidden;
+  }
+  #readies {
+    position: relative;
+    width: 420px;
+    height: 420px;
+  }
 }
 @media only screen and (max-width:800px) {
   #banner {
     position: relative;
     height: 100vh;
+  }
+
+  #banner_section {
+    padding-top: 5rem;
   }
 }

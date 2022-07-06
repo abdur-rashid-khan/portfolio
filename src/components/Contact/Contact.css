@@ -2,13 +2,24 @@
   width: 100%;
   height: auto;
 }
+#contactElement{
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 1rem;
+}
 @media only screen and (max-width:500px) {
   #contactForm{
     width: 100%;
+  }
+  #contactElement{
+    display: block;
   }
 }
 @media only screen and (max-width:767px) {
   #contactText{
     display:none;
+  }
+  #contactElement{
+    display: block;
   }
 }

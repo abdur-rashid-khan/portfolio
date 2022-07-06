@@ -15,11 +15,11 @@ const Skills = () => {
   // const [valueEnd, setValueEnd] = React.useState(66);
   
   return (
-    <section id="skills" className="container mx-auto px-2 py-8">
+    <section id="skills" className="container mx-auto px-4 py-20">
       <div className="">
       <h1 className="text-3xl font-serif text-slate-800 font-semibold">Skills </h1>
       </div>
-      <div className="grid grid-cols-4 justify-items-center gap-6 py-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-6 py-4 items-center text-center">
         {
           skills.map((skill,index)=> <SingleSkill skill={skill} key={index}></SingleSkill> )
         }

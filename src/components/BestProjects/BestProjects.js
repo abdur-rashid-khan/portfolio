@@ -14,10 +14,11 @@ const BestProjects = () => {
       .then(data => setProjects(data))
   }, [])
   return (
-      <section className='py-6' id='project'>
+    <>
+      <section className='py-16' id='project'>
         <div className="container mx-auto px-2">
           <div className="header flex items-center justify-between py-4">
-            <h1 className='text-3xl font-serif font-semibold text-slate-800'>Best Projects</h1>
+            <h1 className='text-3xl font-serif font-semibold text-slate-800'>Latest Projects</h1>
             <Link to={'/total-projects'} className='text-lg underline text-blue-700'>see all </Link>
           </div>
           <div className="total_items grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -27,6 +28,7 @@ const BestProjects = () => {
           </div>
         </div>
       </section>
+      </>
   );
 };
 
