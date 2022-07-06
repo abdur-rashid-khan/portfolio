@@ -11,10 +11,10 @@ const AboutMe = () => {
           <div className="">
             <div className="content">
               <div className="" id='aboutMe'>
-                <div className="img_container py-4 w-full h-auto sm:w-96 sm:h-96 m-auto">
+                <div className="img_container py-4 w-full h-auto sm:w-96 sm:h-96 m-auto" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
                   <img className='rounded w-full h-auto' src={img} alt="" />
                 </div>
-                <div className="about_content py-4">
+                <div className="about_content py-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
                   <div className="">
                     <h1 className='capitalize text-base sm:text-xl md:text-2xl font-serif font-semibold text-slate-700 pt-6'> Hi , I am abdur rashid khan . </h1>
                     <p className='py-6 text-slate-700'>I Have Been Designing And Developing Website For More Then 1.5 Years.It Will Be Responsive, Mobile-Friendly.If You Need To Build A Full Complete Website With More Functions And Unque Look For Your Service/Business/Protfolio, Please Contact Me...</p>
