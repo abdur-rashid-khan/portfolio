@@ -26,7 +26,7 @@ const AddBlog = () => {
             img: img
           }
           // send services data to database
-          fetch('http://localhost:5000/add-blog', {
+          fetch('https://stormy-woodland-85419.herokuapp.com/add-blog', {
             method: 'POST',
             headers: {
               'content-type': 'application/json',

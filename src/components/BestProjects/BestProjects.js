@@ -7,7 +7,7 @@ const BestProjects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/projects', {
+    fetch('https://stormy-woodland-85419.herokuapp.com/projects', {
       method: 'GET',
     })
       .then(res => res.json())

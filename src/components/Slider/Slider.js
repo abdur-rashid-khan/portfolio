@@ -15,7 +15,7 @@ const Slider = () => {
   const [review, setReview] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/review', {
+    fetch('https://stormy-woodland-85419.herokuapp.com/review', {
       method: 'GET',
     })
       .then(res => res.json())

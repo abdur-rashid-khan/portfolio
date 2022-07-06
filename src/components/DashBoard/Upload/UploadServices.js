@@ -25,7 +25,7 @@ const UploadServices = () => {
           img:img
         }
         // send services data to database
-        fetch('http://localhost:5000/services',{
+        fetch('https://stormy-woodland-85419.herokuapp.com/services',{
           method:'POST',
           headers:{
             'content-type':'application/json',

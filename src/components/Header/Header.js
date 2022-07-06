@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-
+import './Header.css'
 
 const Header = () => {
   return (
-    <nav className='navbar bg-slate-600 fixed z-10'>
+    <nav className='navbar fixed z-10 shadow-2xl'>
       <div className="container mx-auto">
         <div className="navbar-start md:w-0">
           <div className="dropdown">

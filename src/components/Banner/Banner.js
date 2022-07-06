@@ -42,7 +42,7 @@ const Banner = () => {
                     }}
                   /></span>
                 </h1>
-                <h4 className="py-6 text-lg sm:text-xl md:lg text-white">I am a font-end developer and I can design and develop any web site. <br></br>Click the resume button and see my resume.
+                <h4 className="py-6 text-lg sm:text-xl md:lg text-white">I  am a font-end  and back-end developer . I can design and develop any web site. Click the resume button and see my resume.. <br></br>Click the resume button and see my resume.
                 </h4>
                 <a target={'_blank'} href={'https://drive.google.com/file/d/1uDjdWBJuly4Uu66tm0V9pivfcjZQhf6Y/view'} className="bg-blue-600 hover:bg-blue-800 p-2 px-6 text-white text-xl uppercase font-serif rounded-bl-xl rounded-tr-xl">Resume</a>
               </div>

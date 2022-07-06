@@ -18,8 +18,8 @@ import SingleBlog from './components/Blog/SingleBlog';
 import BestProjects from './components/BestProjects/BestProjects';
 import Contact from './components/Contact/Contact';
 import Blog from './components/Blog/Blog';
-import Footer from './components/Footer/Footer';
 import AboutMe from './components/AboutMe/AboutMe';
+import Error from './components/Error/Error';
 
 function App() {
   return (
@@ -67,8 +67,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<AboutMe />} />
+        <Route path="*" element={<Error />} />
       </Routes>
-      <Footer></Footer>
+      
     </>
   );
 }

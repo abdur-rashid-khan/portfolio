@@ -6,7 +6,7 @@ const Skills = () => {
 
   const [skills, setSkills] = useState([])
   useEffect(() => {
-    fetch('http://localhost:5000/skills', {
+    fetch('https://stormy-woodland-85419.herokuapp.com/skills', {
       method: 'GET',
     })
       .then(res => res.json())

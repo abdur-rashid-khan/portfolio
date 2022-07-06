@@ -26,7 +26,7 @@ const SkillsPost = () => {
           img:img
         }
         // send services data to database
-        fetch('http://localhost:5000/skill-add',{
+        fetch('https://stormy-woodland-85419.herokuapp.com/skill-add',{
           method:'POST',
           headers:{
             'content-type':'application/json',

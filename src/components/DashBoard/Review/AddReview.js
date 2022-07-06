@@ -25,7 +25,7 @@ const AddReview = () => {
           image:img
         }
         // send services data to database
-        fetch('http://localhost:5000/add-review',{
+        fetch('https://stormy-woodland-85419.herokuapp.com/add-review',{
           method:'POST',
           headers:{
             'content-type':'application/json',

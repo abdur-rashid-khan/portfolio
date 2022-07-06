@@ -25,7 +25,7 @@ const ProjectsPost = () => {
             image: img
           }
           // console.log(projectsData);
-          fetch('http://localhost:5000/project-add', {
+          fetch('https://stormy-woodland-85419.herokuapp.com/project-add', {
             method: 'POST',
             headers:{
               'content-type': 'application/json',

@@ -9,7 +9,7 @@ const SingleBlog = () => {
   // const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/blog/${id}`, {
+    fetch(`https://stormy-woodland-85419.herokuapp.com/blog/${id}`, {
       method: 'GET',
     })
       .then(res => res.json())
