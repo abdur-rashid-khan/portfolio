@@ -16,7 +16,6 @@ const Profile = () => {
   const logout = () => {
     signOut(auth);
   };
-  console.log(user);
   return (
     <div>
       <div className=" text-center py-8 bg-white w-full h-auto md:w-96 md:h-96 shadow-2xl" id='profile'>
