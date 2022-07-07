@@ -20,6 +20,10 @@ import Contact from './components/Contact/Contact';
 import Blog from './components/Blog/Blog';
 import AboutMe from './components/AboutMe/AboutMe';
 import Error from './components/Error/Error';
+import RequireAuth from './components/Auth/RequireAuth';
+import Login from './components/Auth/Login/Login';
+import SignUp from './components/Auth/CreateAccout/NewAccount';
+import Profile from './components/DashBoard/Admin/Profile';
 
 function App() {
   return (
@@ -28,37 +32,61 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        
         <Route path="/admin-rk" element={<DashBoard />} >
           <Route index path='/admin-rk' element={
-            <ManageServices></ManageServices>
+            <RequireAuth>
+              <Profile></Profile>
+            </RequireAuth>
+          }></Route>
+          <Route path='/admin-rk/manage-services' element={
+            <RequireAuth>
+              <ManageServices></ManageServices>
+            </RequireAuth>
           }></Route>
           <Route path='/admin-rk/upload-service' element={
-            <UploadServices></UploadServices>
+            <RequireAuth>
+              <UploadServices></UploadServices>
+            </RequireAuth>
           }></Route>
           <Route path='/admin-rk/manage-projects' element={
-            <ManageProjects></ManageProjects>
+            <RequireAuth>
+              <ManageProjects></ManageProjects>
+            </RequireAuth>
           }></Route>
           <Route path='/admin-rk/project-add' element={
-            <ProjectsPost></ProjectsPost>
+            <RequireAuth>
+              <ProjectsPost></ProjectsPost>
+            </RequireAuth>
           }></Route>
           <Route path='/admin-rk/add-skill' element={
-            <SkillsPost></SkillsPost>
+            <RequireAuth>
+              <SkillsPost></SkillsPost>
+            </RequireAuth>
           }></Route>
           <Route path='/admin-rk/manage-skills' element={
-            <ManageSkills></ManageSkills>
+            <RequireAuth>
+              <ManageSkills></ManageSkills>
+            </RequireAuth>
           }></Route>
           <Route path='/admin-rk/add-review' element={
-            <AddReview></AddReview>
+            <RequireAuth>
+              <AddReview></AddReview>
+            </RequireAuth>
           }></Route>
           <Route path='/admin-rk/manage-review' element={
-            <ManageReview></ManageReview>
+            <RequireAuth>
+              <ManageReview></ManageReview>
+            </RequireAuth>
           }></Route>
           <Route path='/admin-rk/add-blog' element={
-            <AddBlog></AddBlog>
+            <RequireAuth>
+              <AddBlog></AddBlog>
+            </RequireAuth>
           }></Route>
           <Route path='/admin-rk/manage-blog' element={
-            <ManageBlog></ManageBlog>
+            <RequireAuth>
+              <ManageBlog></ManageBlog>
+            </RequireAuth>
           }></Route>
         </Route>
         {/*  */}
@@ -67,6 +95,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<AboutMe />} />
+        <Route path="/login" element={<Login />} />
+        {/* <Route path="/sign-up" element={<SignUp />} /> */}
         <Route path="*" element={<Error />} />
       </Routes>
       

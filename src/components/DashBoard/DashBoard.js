@@ -32,7 +32,8 @@ const DashBoard = () => {
 						<label htmlFor="open-dashboard-menu" className="drawer-overlay "></label>
 						<ul className="menu p-4 overflow-y-auto w-80 bg-blue-600 border-r-1 shadow-lg  text-white">
 							{/* <!-- Sidebar content here --> */}
-							<li className='py-1 text-lg hover:text-black rounded'><Link className='py-2 ' to={'/admin-rk'}>Manage Services</Link></li>
+							<li className='py-1 text-lg hover:text-black rounded'><Link className='py-2 ' to={'/admin-rk'}>Profile</Link></li>
+							<li className='py-1 text-lg hover:text-black rounded'><Link className='py-2 ' to={'/admin-rk/manage-services'}>Manage Services</Link></li>
 							<li className='py-1 text-lg hover:text-black rounded'><Link className='py-2 capitalize' to={'/admin-rk/upload-service'}>Add services</Link></li>
 							<li className='py-1 text-lg hover:text-black rounded'><Link className='py-2 ' to={'/admin-rk/manage-projects'}>Manage Projects</Link></li>
 							<li className='py-1 text-lg hover:text-black rounded'><Link className='py-2 capitalize' to={'/admin-rk/project-add'}>Add Project</Link></li>
